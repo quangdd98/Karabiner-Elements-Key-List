@@ -1,0 +1,75 @@
+{
+    "global": {
+        "check_for_updates_on_startup": false,
+        "show_in_menu_bar": false
+    },
+    "profiles": [
+        {
+            "complex_modifications": {
+                "rules": [
+                    {
+                        "description": "Keybroad illumination",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "f1",
+                                    "modifiers": { "mandatory": ["left_shift"] }
+                                },
+                                "to": [{ "key_code": "illumination_decrement" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "f2",
+                                    "modifiers": { "mandatory": ["left_shift"] }
+                                },
+                                "to": [{ "key_code": "illumination_increment" }],
+                                "type": "basic"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "name": "Default profile",
+            "selected": true,
+            "simple_modifications": [
+                {
+                    "from": { "apple_vendor_top_case_key_code": "keyboard_fn" },
+                    "to": [{ "key_code": "right_option" }]
+                },
+                {
+                    "from": { "key_code": "caps_lock" },
+                    "to": [{ "apple_vendor_top_case_key_code": "keyboard_fn" }]
+                },
+                {
+                    "from": { "key_code": "international1" },
+                    "to": [{ "key_code": "right_shift" }]
+                },
+                {
+                    "from": { "key_code": "international3" },
+                    "to": [{ "key_code": "grave_accent_and_tilde" }]
+                },
+                {
+                    "from": { "key_code": "japanese_eisuu" },
+                    "to": [{ "key_code": "left_command" }]
+                },
+                {
+                    "from": { "key_code": "japanese_kana" },
+                    "to": [{ "key_code": "spacebar" }]
+                },
+                {
+                    "from": { "key_code": "left_command" },
+                    "to": [{ "key_code": "left_option" }]
+                },
+                {
+                    "from": { "key_code": "left_control" },
+                    "to": [{ "key_code": "caps_lock" }]
+                },
+                {
+                    "from": { "key_code": "left_option" },
+                    "to": [{ "key_code": "left_control" }]
+                }
+            ]
+        }
+    ]
+}
